@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b596595cc5c8d09381fec5bf3d628c92">
+		["MD5-CAM-1.0.1"] = <"f76586e8ed99554af0bda1bb3662de82">
 		["build_uid"] = <"53817333-eb3c-36d5-9c54-d20f7ad4bc41">
 	>
 
@@ -39,6 +39,9 @@ definition
 					}
 				}
 			}
+		}
+		encoding matches {
+			CODE_PHRASE[at0004] matches {*}    -- CODE_PHRASE
 		}
 	}
 
@@ -61,6 +64,10 @@ ontology
 				["at0003"] = <
 					text = <"Tree">
 					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"CODE_PHRASE">
+					description = <"">
 				>
 			>
 		>
